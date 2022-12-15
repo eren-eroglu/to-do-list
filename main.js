@@ -3,9 +3,16 @@ const plus = document.querySelector(".plus");
 const container = document.querySelector('.container');
 
 plus.addEventListener("click", () => {
-  console.log(input.value);
+  function setLocal(){
+   
+
+    
+    
+  }
+  
 
 createDiv()
+
 });
 
 function createDiv() {
@@ -40,6 +47,9 @@ function createDiv() {
   div.appendChild(input2);
   div.appendChild(del)
 
+  let inputString = JSON.stringify(input.value)
+
+  localStorage.setItem('todo', JSON.stringify(inputString));
   del.innerText = 'del'
   span.innerText = 'Added'
   input2.value = input.value
