@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.773849f3.css","mappings":"AAAA,SAEQ,2BAA6B,CAD7B,SAER,CAEA,YACQ,WAAY,CACZ,WACR","sources":["index.css"],"sourcesContent":[".btn_div {\n        padding: 0;\n        border-radius: 50% !important;\n}\n\n.btn_submit {\n        padding: 5px;\n        width: 100px;\n}"],"names":[],"sourceRoot":""}
