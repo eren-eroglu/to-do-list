@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Output from "./Output";
+import reactImg from "./img/react.svg";
 const Input = (props) => {
   const [task, setTask] = useState("");
   const [todos, setTodos] = useState([]);
@@ -9,9 +10,9 @@ const Input = (props) => {
 
     setTodos([...todos, task]);
 
-    setId([...id, generateId()])
+    setId([...id, generateId()]);
     console.log(todos);
-    console.log(id)
+    console.log(id);
   };
   const generateId = () => {
     return Math.random();
@@ -25,7 +26,6 @@ const Input = (props) => {
           onSubmit={handleSubmit}
         >
           <div className="form-group w-75 text-center">
-                
             <label htmlFor="addToDo">Add To-do</label>
             <input
               type="todo"
@@ -34,7 +34,6 @@ const Input = (props) => {
               aria-describedby="todoHelp"
               placeholder="Enter Task"
               value={task}
-              
               onChange={(e) => setTask(e.target.value)}
             />
             <small id="todoHelp" className="form-text text-muted">
@@ -43,7 +42,7 @@ const Input = (props) => {
           </div>
 
           <button type="submit" className="btn btn-primary">
-            Submit
+            <img src={reactImg} style={{ height: "25px" }}></img> Add Task
           </button>
         </form>
       </div>
