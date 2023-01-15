@@ -25,7 +25,8 @@ const Input = (props) => {
           className="w-75 d-flex justify-content-center align-items-center"
           onSubmit={handleSubmit}
         >
-          <div className="form-group w-75 text-center">
+          <div className="d-flex ">
+          <div className="form-group w-100 text-center">
             <label htmlFor="addToDo">Add To-do</label>
             <input
               type="todo"
@@ -40,10 +41,12 @@ const Input = (props) => {
               The secret of getting ahead is getting started.
             </small>
           </div>
-
-          <button type="submit" className="btn btn-primary">
+        <div className="btn_div m-2 p-0" style={{height:'300px'}}>
+          <button type="submit" className="btn btn-primary btn_submit">
             <img src={reactImg} style={{ height: "25px" }}></img> Add Task
           </button>
+          </div>
+          </div>
         </form>
       </div>
       <Output todos={todos} key={id}></Output>
