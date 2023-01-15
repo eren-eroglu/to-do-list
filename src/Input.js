@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Output from "./Output";
-import reactImg from "./img/react.svg";
+import reactImg from "./img/reactLogo.svg";
 const Input = (props) => {
   const [task, setTask] = useState("");
   const [todos, setTodos] = useState([]);
