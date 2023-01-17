@@ -41,7 +41,7 @@ const Input = (props) => {
               The secret of getting ahead is getting started.
             </small>
           </div>
-        <div className="btn_div m-2 p-0" style={{height:'300px'}}>
+        <div className="btn_div m-2 p-0" style={{height:'100px'}}>
           <button type="submit" className="btn btn-primary btn_submit">
             <img src={reactImg} style={{ height: "25px" }}></img> Add Task
           </button>
@@ -49,7 +49,7 @@ const Input = (props) => {
           </div>
         </form>
       </div>
-      <Output todos={todos} key={id}></Output>
+      <Output todos={todos}  key={id}></Output>
     </>
   );
 };
